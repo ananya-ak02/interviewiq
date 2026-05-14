@@ -1,0 +1,41 @@
+{
+  "name": "interview-iq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^5.2.0",
+    "@langchain/community": "^1.1.28",
+    "@langchain/core": "^1.1.46",
+    "@langchain/groq": "^1.2.0",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.4",
+    "@tavily/core": "^0.7.3",
+    "@upstash/redis": "^1.38.0",
+    "framer-motion": "^12.38.0",
+    "groq-sdk": "^1.2.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "langchain": "^1.4.0",
+    "lucide-react": "^1.15.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
