@@ -105,7 +105,7 @@ export async function generateQuestionBank(
 ): Promise<QuestionMetadata[]> {
   const llm = new ChatGroq({
     apiKey: process.env.GROQ_API_KEY,
-    modelName: "llama-3.3-70b-versatile",
+    model: "llama-3.3-70b-versatile",
     temperature: 0.7,
   });
 
