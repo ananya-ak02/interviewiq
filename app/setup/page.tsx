@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import SetupStepper from "@/components/setup/SetupStepper";
 
 export default function SetupPage() {
@@ -10,7 +11,9 @@ export default function SetupPage() {
             Tell us about your target role. We will research the company and craft a high-signal question bank.
           </p>
         </div>
-        <SetupStepper />
+        <Suspense fallback={<div className="text-gray-400">Loading setup...</div>}>
+          <SetupStepper />
+        </Suspense>
       </div>
     </div>
   );
