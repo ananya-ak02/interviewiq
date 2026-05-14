@@ -42,9 +42,7 @@ If you are unsure, make a best-effort, evidence-backed inference and keep it con
   ];
 
   try {
-    const searchResults = await Promise.all(
-      queries.map((query) => tavilyClient.search({ query, max_results: 3 }))
-    );
+    const searchResults = await Promise.all(queries.map((query) => tavilyClient.search(query)));
 
     const formattedFindings = searchResults
       .map((result, index) => {
